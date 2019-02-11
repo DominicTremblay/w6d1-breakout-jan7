@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Quote from './Quote';
 import NewQuote from './NewQuote';
-// import uuidv1 from 'uuid/v1';
+import uuid from 'uuid';
 
 class App extends Component {
   constructor(props) {
@@ -73,7 +73,7 @@ class App extends Component {
 
     // create new quote Obj
     const newQuote = {
-      id: 'b35c8d01-fbdb-41da-83eb-9180abcfd54e',
+      id: uuid.v1(),
       author: author,
       content: quote,
       comments: [],
